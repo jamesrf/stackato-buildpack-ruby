@@ -63,7 +63,7 @@ done
 
 bundle_install
 write_database_yml
-db_migrate
+#db_migrate
 create_asset_plugin
 
 
