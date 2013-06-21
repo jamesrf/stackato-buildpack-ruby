@@ -11,6 +11,10 @@ ROOT_DIR=$(dirname $BIN_DIR)
 BUILD_DIR=$1
 CACHE_DIR=$2
 
+echo "BUILD_DIR="
+echo $1
+echo "CACHE_DIR="
+echo $2
 # use the latest ruby (1.9) in stackato
 export PATH=/opt/rubies/current/bin:$PATH
 
