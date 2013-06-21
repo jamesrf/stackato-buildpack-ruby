@@ -41,7 +41,7 @@ function write_database_yml {
 
 function db_migrate {
     puts-step "Running rake db:migrate"
-    bundle exec rake db:migrate --trace 2>&1 | indent
+    bundle exec rake db:create db:migrate --trace 2>&1 | indent
 }
 
 function create_asset_plugin {
